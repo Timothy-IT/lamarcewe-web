@@ -1,0 +1,85 @@
+body {
+   
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      background-image: linear-gradient(to right top, #ffffff, #ece0fb, #e3bff1, #e29bde, #e472c2, #d972d2, #c974e4, #b278f5, #49a8ff, #00ccff, #00e9ff, #00ffef);      font-family: Arial, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  * {
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+  h1 {
+    color: #e5989b;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .proposal-text {
+    font-size: 1.5rem;
+    color: #6d6875;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  button {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  #yesBtn {
+    background-image: linear-gradient(to right top, #0f407f, #005c9c, #0079b6, #0097cf, #00b5e6, #00bcee, #00c3f7, #00caff, #00b9ff, #00a6ff, #2f8fff, #6d74fb);
+    color: white;
+  }
+
+  #yesBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(181, 131, 141, 0.4);
+  }
+
+  #noBtn {
+    background-image: linear-gradient(to right top, #000bf8, #a100d2, #d200ad, #eb008d, #f52876, #f74b94, #f667ae, #f37fc6, #caa1fe, #87c3ff, #42ddff, #4ff0ff); 
+    color: white;
+    position: relative;
+  }
+
+  .heart {
+    font-size: 100px;
+    color: #e5989b;
+    display: none;
+    position: fixed;
+    pointer-events: none;
+    animation: float 2s ease-out forwards;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100px) scale(1.5);
+      opacity: 0;
+    }
+  }
